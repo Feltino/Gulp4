@@ -1,0 +1,152 @@
+@font-face
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/OpenSans-Regular.woff') format('woff'),
+          url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+          url('../fonts/OpenSans-Regular.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: 100;
+
+@font-face
+  font-family: 'OpenSans-Semibold';
+  src: url('../fonts/OpenSans-Semibold.eot');
+  src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/OpenSans-Semibold.woff') format('woff'),
+          url('../fonts/OpenSans-Semibold.ttf') format('truetype'),
+          url('../fonts/OpenSans-Semibold.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: 100;
+
+@font-face
+  font-family: 'Museo Sans Cyrl 500';
+  src: url('../fonts/ms-500.eot');
+  src: url('../fonts/ms-500.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/ms-500.woff') format('woff'),
+          url('../fonts/ms-500.ttf') format('truetype'),
+          url('../fonts/ms-500.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: 100;
+
+@font-face
+  font-family: 'FontAwesome';
+  src: url('../fonts/fa-solid-900.eot');
+  src: url('../fonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/fa-solid-900.woff') format('woff'),
+          url('../fonts/fa-solid-900.ttf') format('truetype'),
+          url('../fonts/fa-solid-900.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: 100;
+@font-face
+  font-family: 'FontAwesome';
+  src: url('../fonts/fa-brands-400.eot');
+  src: url('../fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/fa-brands-400.woff') format('woff'),
+          url('../fonts/fa-brands-400.ttf') format('truetype'),
+          url('../fonts/fa-brands-400.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: 100;
+@font-face
+  font-family: 'FontAwesome 300';
+  src: url('../fonts/fa-light-300.eot');
+  src: url('../fonts/fa-light-300.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/fa-light-300.woff') format('woff'),
+          url('../fonts/fa-light-300.ttf') format('truetype'),
+          url('../fonts/fa-light-300.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: 100;
+@font-face
+  font-family: 'FontAwesome 400';
+  src: url('../fonts/fa-regular-400.eot');
+  src: url('../fonts/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/fa-regular-400.woff') format('woff'),
+          url('../fonts/fa-regular-400.ttf') format('truetype'),
+          url('../fonts/fa-regular-400.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: 100;
+
+
+normal()
+  font-family: 'OpenSans-Regular', sans-serif;
+bold()
+  font-family: 'OpenSans-Semibold', sans-serif;
+fa()
+  font-family: 'FontAwesome', sans-serif;
+fa300()
+  font-family 'FontAwesome 300', sans-serif;
+fa400()
+  font-family 'FontAwesome 400', sans-serif;
+
+
+
+webfont(Font Awesome,aw,false,normal,normal)
+
+
+html
+  .edge
+    h1
+      bottom()
+      bold()
+    h2
+      bottom()
+      bold()
+    p
+      normal()
+      bottom()
+    .title1
+        h3
+            font-size 14px
+            text-transform uppercase
+            bold()
+            letter-spacing: 2.5px
+            padding-bottom 90px
+            +tablet()
+                font-size 14px
+            +mob()
+                font-size 10px
+        h1
+            font-size 82px
+            +tablet()
+                font-size 50px
+            +mob()
+                font-size 30px
+        h2
+          font-size 60px
+          +tablet()
+              font-size 50px
+          +mob()
+              font-size 30px
+        p
+            font-size 26px
+            padding-bottom 50px
+            +tablet()
+                font-size 26px
+            +mob()
+                font-size 20px
+        a    
+            display: inline-block
+            normal()
+            height: 60px
+            border: 0 none
+            font-size: 16px
+            border-radius: 30px
+            padding-left: 60px
+            padding-right: 60px
+            text-align: center
+            white-space: nowrap
+            vertical-align: middle
+            font-weight: bold
+            background-image: none
+            cursor: pointer
+            user-select: none
+            box-sizing: border-box
+            text-decoration none
+            +tablet()
+                font-size 15px
+            +mob()
+                font-size 14px
+                padding-left 30px
+                padding-right 30px
+            table
+                width 100%
+                height 100%

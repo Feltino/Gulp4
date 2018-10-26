@@ -1,0 +1,132 @@
+/////////////////////////////////////////////////////////////
+// @font-face
+// Usage: webfont('Crimson-Text-Roman', 'crimson-text', 'crimsontext-roman-webfont', true, normal, normal)
+// Generator: http://transfonter.org/
+/////////////////////////////////////////////////////////////
+
+webfont(family, file, hack-chrome-windows = false, weight = normal, style = normal)
+  @font-face
+    font-family family
+    src url('../fonts/' + file + '.eot')
+    src url('../fonts/' + file + '.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/' + file + '.woff2') format('woff2'),
+    url('../fonts/' + file + '.woff') format('woff'),
+    url('../fonts/' + file + '.ttf') format('truetype'),
+    url('../fonts/' + file + '.svg#'+ family) format('svg')
+    font-weight weight
+    font-style style
+      if hack-chrome-windows
+        @media screen and (-webkit-min-device-pixel-ratio:0)
+          @font-face
+            font-family family
+            src url('../fonts/' + file + '.svg#'+ family) format('svg')
+
+placeholder()
+  &::-webkit-input-placeholder
+    {block}
+  &:-moz-placeholder
+    {block}
+  &::-moz-placeholder
+    {block}
+  &:-ms-input-placeholder
+    {block}
+
+scroll()
+  &::-webkit-scrollbar-track 
+    background-color #b4b4b4
+  &::-webkit-scrollbar-thumb
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color act-b
+  &::-webkit-scrollbar-thumb:hover
+    background-color:#56999f;
+  &::-webkit-resizer
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+  &::-webkit-scrollbar
+    width: 4px;
+
+desk()
+  @media only screen and (max-width: $break_md)
+    {block}
+tablet()
+  @media only screen and (max-width: $break_sm)
+    {block}
+mob()
+  @media only screen and (max-width: $break_xs)
+    {block}
+
+
+dk-b()
+  @media only screen and (max-width: 1900px)
+    {block}
+xl-b()
+  @media only screen and (max-width: 1200px)
+    {block}
+desktop()
+  @media only screen and (max-width: 1720px)
+    {block}
+vip()
+  @media only screen and (max-width: 1135px)
+    {block}
+lg-b()
+  @media only screen and (max-width: 992px)
+    {block}
+lx-b()
+  @media only screen and (max-width: 880px)
+    {block}
+md-b()
+  @media only screen and (max-width: 768px)
+    {block}
+sm-b()
+  @media only screen and (max-width: 576px)
+    {block}
+
+
+llg-m()
+  @media only screen and (max-width: 12000px)
+    {block}
+lg-m()
+ @media only screen and (max-width: 1200px)
+   {block}
+md-m()
+  @media only screen and (max-width: 992px)
+    {block}
+sm-m()
+  @media only screen and (max-width: 768px)
+    {block}
+xs-m()
+  @media only screen and (max-width: 480px)
+    {block}
+xxs-m()
+  @media only screen and (max-width: 360px)
+    {block}
+xx-m()
+  @media only screen and (max-width: 375px)
+    {block}
+ps-m()
+  @media only screen and (max-width: 320px)
+    {block}
+
+
+
+xl-s()
+  @media only screen and (max-width: 1340px)
+    {block}
+lg-s()
+  @media only screen and (max-width: 960px)
+    {block}
+md-s()
+  @media only screen and (max-width: 720px)
+    {block}
+sm-s()
+  @media only screen and (max-width: 540px)
+    {block}
+
+
+
+
+
+
